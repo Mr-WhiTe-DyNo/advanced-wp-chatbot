@@ -2,45 +2,44 @@
 
 ***WhatsApp OpenAI Create with NodeJS Using Library [Baileys](https://github.com/adiwajshing/Baileys)***
 
-## BACA DULU
-Terdapat 2 fitur yaitu ```ChatGPT(text)``` dan ```DALL-E(Text To Image)``` tipe yaitu <br>Untuk commandnya menggunakan ```/ai``` dan ```/img```
+## READ FIRST
+There are 2 features, namely ```ChatGPT(text)``` and ```DALL-E(Text To Image)``` type, namely <br>For the command use ```/ai``` and ```/ img```
 
 ## Get & Change OpenAI ApiKey
-- Silakan buat apikeynya terlebih dahulu [Disini](https://beta.openai.com/account/api-keys)
-- Ganti ApiKey OpenAI pada file [key.json](https://github.com/Sansekai/Wa-OpenAI/blob/3bd55740764bcb30084277f6be82d15b6ee25b99/key.json#L2)
+- Please create apikey first [Here](https://beta.openai.com/account/api-keys)
+- Replace ApiKey OpenAI in file [key.json](https://github.com/Sansekai/Wa-OpenAI/blob/3bd55740764bcb30084277f6be82d15b6ee25b99/key.json#L2)
 
 ## Install
 **Install on RDP/Windows ✅**
 
 Install [NodeJS](https://nodejs.org/en/download/)
- dan [Git Bash](https://git-scm.com/downloads) terlebih dahulu
+and [Git Bash](https://git-scm.com/downloads) first
+
 ```bash
-$ git clone https://github.com/Sansekai/Wa-OpenAI
-$ cd Wa-OpenAI
+$ git clone https://github.com/Shivam304/advanced-wp-chatbot
+$ cd advanced-wp-chatbot
 $ npm install
 $ node index.js
 ```
 **Install on Termux ✅**
 
-Silakan install manual ```node_modules``` terlebih dahulu, karena di termux saat install otomatis melalui ```npm install``` terjadi error.
-<br>Link ```node_modules```: [Klik Disini](https://drive.google.com/file/d/1gKGjseRirX6mQ5LOFULpmnDs7q3Svm8y/view?usp=sharing)
+Please manually install ```node_modules``` first, because in Termux when installing automatically via ```npm install``` an error occurs.
+<br>Link ```node_modules```: [Click Here](https://drive.google.com/file/d/1gKGjseRirX6mQ5LOFULpmnDs7q3Svm8y/view?usp=sharing)
 ```bash
 $ pkg install git nodejs -y
-$ git clone https://github.com/Sansekai/Wa-OpenAI
-$ cd Wa-OpenAI
+$ git clone https://github.com/Shivam304/advanced-wp-chatbot
+$ cd advanced-wp-chatbot
 ```
-Sesudah menginstall file node_modules, silahkan extract file ```node_modules.zip``` dan taruh di folder Wa-OpenAI.
+After installing the node_modules file, please extract the file ```node_modules.zip``` and place it in the advanced-wp-chatbot folder.
 
 **Run**
 ```bash
 $ node index.js
 ```
 
-## Donate
-<a href="https://saweria.co/Sansekai" target="_blank"><img src="https://user-images.githubusercontent.com/26188697/180601310-e82c63e4-412b-4c36-b7b5-7ba713c80380.png" alt="Donate For Yusril" height="41" width="174"></a>
 
 ## License
-[MIT License](https://github.com/Sansekai/Wa-OpenAI/blob/main/LICENSE)
+[MIT License](https://github.com/Shivam304/advanced-wp-chatbot/main/License)
 
-Copyright (c) 2022 M Yusril
+Copyright (c) 2023 @Shivam304
 
