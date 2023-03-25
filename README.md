@@ -1,4 +1,4 @@
-# Wa-OpenAI
+# Advanced Wp Chatbot
 
 ***WhatsApp OpenAI Create with NodeJS Using Library [Baileys](https://github.com/adiwajshing/Baileys)***
 
