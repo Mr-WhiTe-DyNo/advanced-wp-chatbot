@@ -70,47 +70,44 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
 
     if (isCmd2) {
       switch (command) {
-        case "Help":
-        case "Menu":
+        case "help":
+        case "menu":
 		case "Command":
-          m.reply(`Chat GPT Based Whatsapp Bot 
-            
-╔─═─═⊱ 「 _Mᴀᴅᴇ Bʏ Sʜɪᴠᴀᴍ Kᴜᴍᴀʀ [ Nᴏʙɪᴛᴀ X Sʜɪᴠᴀᴍ ]_ 」 ─═─═⬣
-│ 
-│         ┏⊱ Command For Questions/Answers 
+          m.reply(`
+╔⊱「 _Mᴀᴅᴇ Bʏ Sʜɪᴠᴀᴍ Kᴜᴍᴀʀ_ 」┓
 │
-│            ⿻ /ai  [ Your Question ] 
-│            ⿻ /Ai [ Your Question ]  
-│            ⿻ /Openai [ Command ]
-│            ⿻ /Helper  [ Command ]
-│            ⿻ /Bot [ Command ]
-│            ⿻ /Google [ Command ]
-│            ⿻ /Bhai [ Command ]
+│       ___________♡____________
+│
+│   ⿻ Instagram:- @nobita.haxk
+│   ⿻ Telegram :- @nobita_x_shivam  
+│                       
+┗━━━━━━━━━━━━━━━━━━⬣          
+   
+╔⊱ 「 Commands For Answers 」
+│
+│      ⿻ /ai    ( command ) 
+│      ⿻ /Ai    ( command )  
+│      ⿻ /Openai ( command )
+│      ⿻ /Helper  ( command )
+│      ⿻ /Bot  ( command )
+│      ⿻ /Google ( command )
+│      ⿻ /Bhai ( command )
 │
 │
-│        ┏⊱ Command For Generating Images 
+│  「 Commands For Images 」
 │              
-│            ⿻ /img [ Command Promt ] 
-│            ⿻ /Ai-img [ Command Promt ]
-│            ⿻ /Image  [ Command Promt ]
-│            ⿻ /Images [ Command Promt ] 
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⬣
-╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⬣
-│ 
-│            「 _Owner's Contact_ 」  
-│ 
-│        Shivam Kumar [ Nobita X Shivam ] 
-│ 
-│       ⿻ Instagram:- @nobita.haxk
-│       ⿻ Telegram :- @nobita_x_shivam 
+│      ⿻ /img    ( command )
+│      ⿻ /Ai-img  ( command ) 
+│      ⿻ /Image  ( command )
+│      ⿻ /Images  ( command ) 
 │
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⬣ `)
+┗━━━━━━━━━━━━━━━━━━━━⬣ `)
  
          break;
         case "ai": case "Openai": case "Bot": case "Baba": case "Helper": case "Google": case "Ai": case "openai":  case "bot": case "helper": case "google": case "bhai":
           try {
             if (setting.keyopenai === "ISI_APIKEY_OPENAI_DISINI") return reply("Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys");
-            if (!text) return reply(`Chat .\n\nContoh:\n${prefix}${command} Apa itu resesi`);
+            if (!text) return reply(`Chat .\n\nContoh:\n${prefix}${Command} What is a recession`);
             const configuration = new Configuration({
               apiKey: setting.keyopenai,
             });
@@ -128,7 +125,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
             m.reply(`${response.data.choices[0].text}`);
           } catch (err) {
             console.log(err);
-            m.reply("Check Your Internet And Try Again Later :" + err);
+            m.reply("Network Error :" + err);
           }
           break;
         case "Img": case "Ai-img": case "img": case "Image": case "Images": case "ai-img": case "image": case "images": case "Images":
@@ -148,7 +145,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
             client.sendImage(from, response.data.data[0].url, text, mek);
           } catch (err) {
             console.log(err);
-            m.reply(" Check Your Internet And Try Again Later :"+ err);
+            m.reply(" Network Error Or Change Your Api Key :"+ err);
           }
           break;
         default: {
