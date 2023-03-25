@@ -39,7 +39,7 @@ $ node index.js
 
 
 ## License
-[MIT License](https://github.com/Shivam304/advanced-wp-chatbot/main/License)
+[MIT License](https://raw.githubusercontent.com/Shivam304/advanced-wp-chatbot/main/License)
 
 Copyright (c) 2023 @Shivam304
 
