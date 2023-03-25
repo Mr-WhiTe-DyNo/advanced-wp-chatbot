@@ -7,7 +7,7 @@ There are 2 features, namely ```ChatGPT(text)``` and ```DALL-E(Text To Image)```
 
 ## Get & Change OpenAI ApiKey
 - Please create apikey first [Here](https://beta.openai.com/account/api-keys)
-- Replace ApiKey OpenAI in file [key.json] (https://github.com/Shivam304/advanced-wp-chatbot/blob/main/key.json)
+- Replace ApiKey OpenAI in file [key.json](https://github.com/Shivam304/advanced-wp-chatbot/blob/main/key.json)
 
 ## Install
 **Install on RDP/Windows ✅**
